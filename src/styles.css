@@ -1,0 +1,205 @@
+.body{
+      font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f8f8f8f5; /* Màu nền */
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.custom-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, #7ABDF9 0%, #4C9ED9 100%); 
+    color: #39568b; 
+    font-size: 20px; 
+    font-family: Arial, sans-serif; 
+    border-radius: 150px; 
+    border: 1px solid #4c9ed9;
+    text-align: center; 
+    text-decoration: none; 
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease; 
+    width: 80%;
+     
+}
+
+.custom-button:hover {
+    background: linear-gradient(to bottom, #60a5e6 0%, #bce0f8 100%); 
+}
+
+.button-description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+
+
+footer {
+    background-image: url(Image/footer.png);
+    background-color: #c4ccd4; 
+    color: #ffffff; 
+    padding: 10px; 
+}
+
+footer a {
+    color: #adb5bd; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    color: #ffffff; 
+}
+
+.footer-bottom {
+    position: fixed;
+    background-color: #616161;
+    backdrop-filter: blur(10px); 
+}
+
+.blockquote-footer {
+    bottom: 10px;
+    right: 15px;
+}
+.custom-quote {
+    position: relative;
+    background-color: #000000; 
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 30px 20px; 
+}
+.custom-quote::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 50px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #e9ecef; 
+}
+
+
+.img {
+    width: 280px;
+}
+
+.icon{
+    width: 12%;
+}
+
+.arrow{
+    width: 60%;
+}
+
+/* Cho màn hình điện thoại (nhỏ hơn 576px) */
+@media (max-width: 575.98px) {
+    .custom-button {
+        font-size: 16px; 
+        width: 50%; 
+    }
+
+    .custom-quote {
+        padding: 20px 10px;
+    }
+
+    .title {
+        font-size: 24px; 
+    }
+
+    footer {
+        padding: 0px; 
+    }
+
+    .blockquote-footer {
+        font-size: 12px; 
+    }
+
+    .img-fluid {
+        width: 50%;
+    }
+    .img{
+        width: 50%;
+    }
+    .icon {
+        width: 5%;
+    }
+    .arrow{
+        display: none;
+    }
+}
+
+/* Cho màn hình máy tính bảng (576px đến 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .custom-button {
+        font-size: 18px; 
+        width: 30%; 
+    }
+
+    .title {
+        font-size: 28px; 
+    }
+
+    .custom-quote {
+        padding: 25px 15px; 
+    }
+
+    .blockquote-footer {
+        font-size: 14px; 
+    }
+
+    .img-fluid {
+        width: 30%; 
+    }
+    .img{
+        width: 50%;
+    }
+    .icon {
+        width: 7%;
+    }
+    .arrow{
+        display: none;
+    }
+}
+
+/* Cho màn hình desktop nhỏ (768px đến 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .custom-button {
+        font-size: 20px; 
+        width: 80%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .custom-quote {
+        padding: 30px 20px; 
+    }
+
+    .blockquote-footer {
+        font-size: 16px; 
+    }
+
+    .img-fluid {
+        width: 50%;
+    }
+    .img{
+        width: 80%;
+    }
+    .icon {
+        width: 12%;
+    }
+    .arrow{
+        display: none;
+        width: 75%;
+    }
+}
+
+
