@@ -98,6 +98,10 @@ footer a:hover {
     width: 60%;
 }
 
+#main_footer{
+    width:100%;
+}
+
 /* Cho màn hình điện thoại (nhỏ hơn 576px) */
 @media (max-width: 575.98px) {
     .custom-button {
